@@ -11,7 +11,7 @@ function startGame() {
   const betAmount = parseFloat(document.getElementById('betAmount').value);
 
   if (!betAmount || betAmount < 1) {
-    alert('Enter valid bet amount!');
+    alert('Enter a valid bet!');
     return;
   }
 
@@ -28,7 +28,9 @@ function startGame() {
 
   elem.onclick = () => {
     let winnings = betAmount * item.multiplier;
-    result.innerText = item.multiplier === 0 ? '💥 You hit a bomb! You lost!' : `🎉 You won $${winnings.toFixed(2)}!`;
+    result.innerText = item.multiplier === 0
+      ? '💥 Bomb! You lost.'
+      : `🎉 You won $${winnings.toFixed(2)}!`;
     elem.remove();
   };
 
