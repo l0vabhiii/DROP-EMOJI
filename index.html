@@ -3,24 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OG Casino Drop</title>
+  <title>OG Casino Drop | Stake Edition</title>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/png" href="favicon.png"/>
 </head>
 <body>
-  <div class="game-container">
-    <h1>OG Casino Drop 🎰</h1>
-    <p>Place your bet and catch a falling reward!</p>
-    
-    <div class="drop-zone" id="drop-zone">
-      <!-- falling items come here -->
+  <div class="main-wrapper">
+    <header>
+      <img src="logo.png" alt="OG Casino Drop" class="logo"/>
+      <h1>OG Casino Drop</h1>
+      <p>Stake-style premium drop game. Place your bet and catch the prize.</p>
+    </header>
+
+    <div class="game-container">
+      <div class="drop-zone" id="drop-zone"></div>
+      <div class="controls">
+        <input type="number" id="betAmount" placeholder="Enter Bet ($)" min="1" />
+        <button onclick="startGame()">🎯 BET NOW</button>
+      </div>
+      <div class="result" id="result"></div>
     </div>
 
-    <div class="controls">
-      <input type="number" id="betAmount" placeholder="Enter Bet Amount ($)" min="1" />
-      <button onclick="startGame()">🎯 BET NOW</button>
-    </div>
-
-    <div class="result" id="result"></div>
+    <footer>
+      <p>🎲 Built for Stake Engine | All rights reserved © OG Drop</p>
+    </footer>
   </div>
 
   <script src="game.js"></script>
