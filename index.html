@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OG Casino Drop</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="game-container">
+    <h1>OG Casino Drop 🎰</h1>
+    <p>Place your bet and catch a falling reward!</p>
+    
+    <div class="drop-zone" id="drop-zone">
+      <!-- falling items come here -->
+    </div>
+
+    <div class="controls">
+      <input type="number" id="betAmount" placeholder="Enter Bet Amount ($)" min="1" />
+      <button onclick="startGame()">🎯 BET NOW</button>
+    </div>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
